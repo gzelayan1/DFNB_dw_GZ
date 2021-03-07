@@ -26,7 +26,7 @@ Ver      Date        Author        Description
 1.0     06/13/2019   JJAUSSI       1. Built this table for LDS BC IT240
 1.1     06/20/2019   JJAUSSI       1. Rebuilt table script as stored procedure
 
------
+---------
 
 RUNTIME: 
 Approx. 5 min for 1MM rows
