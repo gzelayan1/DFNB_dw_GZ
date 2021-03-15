@@ -6,7 +6,7 @@ MODIFICATION LOG:
 Ver      Date        Author        Description
 -----   ----------   -----------   -------------------------------------------------------------------------------
 1.0     11/12/2019   JJAUSSI       1. Built this table for LDS BC IT240
-1.1     3/11/2019   JJAUSSI       1. Built CONSTRAIN 
+
 
 
 RUNTIME: 
@@ -38,9 +38,9 @@ CREATE TABLE [dbo].[tblNAICSCodeHier](
 	[industry_desc] [nvarchar](500) NOT NULL,
 	[nation_industry_code] [float] NOT NULL,
 	[nation_industry_desc] [nvarchar](500) NOT NULL,
-	CONSTRAINT [PK_tblNAICSCodeHier] PRIMARY KEY CLUSTERED
+	CONSTRAINT[PK_tblNAICSCodeHier] PRIMARY KEY CLUSTERED
 (
-    [nation_industry_code] ASC
+[industry_sub_sector_code] ASC
 )
 )
 ;
