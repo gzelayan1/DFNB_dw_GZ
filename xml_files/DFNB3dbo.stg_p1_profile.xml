@@ -1,0 +1,355 @@
+<?xml version="1.0"?>/******DFNB3******/
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}" Name="(local).DFNB3">
+      <DtsConnectionManagerID>(local).DFNB3</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{3C30E3AC-EF18-46FF-AF3D-D021C9902FA4}" Name="(local).EXM1">
+      <DtsConnectionManagerID>(local).EXM1</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{E202BDE2-00F7-46E7-AA41-042B2AAC9326}" Name="DFNB3">
+      <DtsConnectionManagerID>DFNB3</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{A8229B8B-677E-4B28-8BCD-1AC9D9773DCC}" Name="DFNB3dbo.stg_p1_profile.xml">
+      <DtsConnectionManagerID>DFNB3dbo.stg_p1_profile.xml</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{0FD1996E-43F5-4554-BDA1-B856F2199362}" Name="EXM">
+      <DtsConnectionManagerID>EXM</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{10222769-D9E3-46A8-9BFB-1DDAA8868869}" Name="LoadNAICSCodeHierDim_GZ.dtsx">
+      <DtsConnectionManagerID>LoadNAICSCodeHierDim_GZ.dtsx</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{89F1A277-2B00-437E-8EFD-3AE7AE0BD631}" Name="SSIS_PDS">
+      <DtsConnectionManagerID>SSIS_PDS</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{ED9FE9E1-E200-4EA6-B44B-FF9655294B14}" Name="stg_p1_b1.txt">
+      <DtsConnectionManagerID>stg_p1_b1.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{69afd472-d54f-4f15-94ef-7cfe6e14155a}" Name="stg_p1_b2.txt">
+      <DtsConnectionManagerID>stg_p1_b2.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{d4e34973-3297-4632-a380-a7c3b55975f8}" Name="stg_p1_b3.txt">
+      <DtsConnectionManagerID>stg_p1_b3.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{7670b55c-e8d5-4503-89cb-19fdee8a9ce4}" Name="stg_p1_b4.txt">
+      <DtsConnectionManagerID>stg_p1_b4.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{4db28788-9eff-4c71-b703-9fa2ecd41eb2}" Name="stg_p1_b5.txt">
+      <DtsConnectionManagerID>stg_p1_b5.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{10612156-a92c-47ab-86c2-a7188634e19b}" Name="stg_p1_b6.txt 1">
+      <DtsConnectionManagerID>stg_p1_b6.txt 1</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{035a433f-8f44-443e-b0ac-d1c9c26d6829}" Name="stg_p1_bN.txt">
+      <DtsConnectionManagerID>stg_p1_bN.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{81B8ACB1-1409-4627-B603-6A9978CEAAB6}" Name="stg_p2.txt">
+      <DtsConnectionManagerID>stg_p2.txt</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table Schema="dbo" Table="stg_p1" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_cust_role_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_id2" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="prod_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="open_date" SqlDbType="Date" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="close_date" SqlDbType="Date" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="open_close_code" SqlDbType="VarChar" MaxLength="1" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="branch_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_rel_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="pri_cust_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="loan_amt" SqlDbType="Decimal" MaxLength="0" Precision="20" Scale="4" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_code" SqlDbType="VarChar" MaxLength="5" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_desc" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_region_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_area_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_lat" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_lon" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_add_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_add_lat" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_add_lon" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_branch_add_type" SqlDbType="VarChar" MaxLength="1" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_id2" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="last_name" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="first_name" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="gender" SqlDbType="VarChar" MaxLength="1" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="birth_date" SqlDbType="Date" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_since_date" SqlDbType="Date" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="pri_branch_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_pri_branch_dist" SqlDbType="Decimal" MaxLength="0" Precision="7" Scale="2" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_lat" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_lon" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_rel_id" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_add_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_add_lat" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_add_lon" SqlDbType="Decimal" MaxLength="0" Precision="16" Scale="12" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cust_add_type" SqlDbType="VarChar" MaxLength="1" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="as_of_date" SqlDbType="Date" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="acct_id3" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D8CB337C-3A53-40F9-B5E0-2063F9CB2F51}</DataSourceID>
+        <Table DataSource="(local)" Database="DFNB3" Schema="dbo" Table="stg_p1" RowCount="-1" />
+        <Column Name="cur_bal" SqlDbType="Decimal" MaxLength="0" Precision="20" Scale="4" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>
+--DFNB3
