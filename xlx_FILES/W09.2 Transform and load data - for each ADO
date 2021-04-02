@@ -1,0 +1,17 @@
+;SELECT DISTINCT CAST(YEAR(s_tran_date) as varchar(4)) as v_tran_year
+  FROM dbo.stg_p2 s
+  ORDER BY 1;
+
+
+
+SELECT s.*
+FROM dbo.stg_p2 s
+WHERE YEAR (s.tran_date)=2010
+ORDER BY 3,4,5;
+
+BRANCH_TRAN_.txt
+  @[User::v_data_share_root] +"BRANCH_TRAN_" + @[User::v_data_tran_year]  + ".txt" 
+
+
+  v_archive_dir =
+  @[User::v_data_share_root] + "archive\\"

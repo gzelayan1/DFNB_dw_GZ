@@ -1,4 +1,4 @@
-<?xml version="1.0"?>/******DFNB3******/
+<?xml version="1.0"?>
 <DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
   <ProfileVersion>1.0</ProfileVersion>
   <DataSources>
@@ -352,4 +352,3 @@
     </Profiles>
   </DataProfileOutput>
 </DataProfile>
---DFNB3
