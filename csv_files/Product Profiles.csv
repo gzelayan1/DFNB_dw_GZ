@@ -10,3 +10,4 @@ prod_id,prod_code,prod_desc,revolve_ind,loan_amt_lmt
 8,OCL,Overdraft Credit Line,Y,10000
 9,DCL,Debt Consolidation Loan,N,1000000
 10,PCL,Personal Credit Line,Y,100000
+
