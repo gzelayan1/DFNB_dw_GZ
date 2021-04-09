@@ -758,7 +758,9 @@ IF EXISTS
     SELECT 1
       FROM sys.key_constraints
      WHERE type = 'PK'
-           AND parent_object_id = OBJECT_ID('dbo.tblAccountCustomerDim')
+           AND parent_object_id = OBJECT_ID('dbo.
+		   
+		   ')
 )
     BEGIN
         ALTER TABLE dbo.tblAccountCustomerDim DROP CONSTRAINT PK_tblAccountCustomerDim;
